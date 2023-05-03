@@ -137,17 +137,17 @@ class WebpackCompiler
         $manifest = json_decode(file_get_contents($this->manifestPath), true);
         $this->manifestStorage->saveManifest($manifest);
 
-        if (!unlink($this->manifestPath)) {
-            throw new RuntimeException('Cannot unlink manifest file at ' . $this->manifestPath);
-        }
+//        if (!unlink($this->manifestPath)) {
+//            throw new RuntimeException('Cannot unlink manifest file at ' . $this->manifestPath);
+//        }
     }
 
     private function removeManifestFile()
     {
-        if (file_exists($this->manifestPath)) {
-            $this->logger->info('Deleting manifest file', [$this->manifestPath]);
-            unlink($this->manifestPath);
-        }
+//        if (file_exists($this->manifestPath)) {
+//            $this->logger->info('Deleting manifest file', [$this->manifestPath]);
+//            unlink($this->manifestPath);
+//        }
     }
 
     private function outputNoEntryPointsNotice(Closure $callback = null)
