@@ -1,5 +1,5 @@
 {
-    "name": "maba/webpack-bundle",
+    "name": "etrias/webpack-bundle",
     "type": "symfony-bundle",
     "description": "Bundle to Integrate Webpack to Symfony",
     "keywords": ["webpack", "assets", "symfony", "symfony2", "amd", "commonjs"],
